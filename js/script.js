@@ -1,4 +1,4 @@
-import {fakultet} from './fakultet.js'
+import { fakultet } from './fakultet.js';
 
 function regnUt(evt) {
     // For å forhindre at nettleseren sender skjemaet:
