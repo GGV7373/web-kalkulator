@@ -42,7 +42,13 @@ web-kalkulator/
    ```
 3. Open `index.html` in your browser to use the calculator.
 
-# Webside will come soon.
+## Websites
+From GitHub Pages:
+https://ggv7373.github.io/web-kalkulator/
+
+And from Netlify:
+https://web-kalk.netlify.app/
+
 
 ## Testing
 The project includes test files for each module to ensure the correctness of the implemented logic. To run the tests:
