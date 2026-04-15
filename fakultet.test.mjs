@@ -2,7 +2,12 @@ import { fakultet } from './js/fakultet.js';
 import test from 'node:test';
 import * as assert from "node:assert";
 
+console.log('Testing fakultet function');
+
 test('fakultet av 5 er 120', () => {
-    console.log('Testing fakultet av 5');
     assert.strictEqual(fakultet(5), 120);
+})
+
+test('fakultet av 15 er 1307674368000', () => {
+    assert.strictEqual(fakultet(15), 1307674368000);
 })

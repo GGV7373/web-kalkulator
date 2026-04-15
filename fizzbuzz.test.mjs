@@ -2,9 +2,9 @@ import { fizzbuzz } from "./js/fizzbuzz.js";
 import test from 'node:test';
 import * as assert from "node:assert";
 
+console.log('Testing fizzbuzz function');
 
 test('fizzbuzz av 3 er Fizz', () => {
-    console.log('Testing fizzbuzz');
     assert.strictEqual(fizzbuzz(3), 'Fizz');
 })
 

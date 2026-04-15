@@ -1,5 +1,6 @@
 import { fakultet } from './fakultet.js';
 import { fizzbuzz } from './fizzbuzz.js';
+import { fibonacci } from './fibonacci.js';
 
 function regnUtFakultet(evt) {
     evt.preventDefault();
@@ -29,6 +30,20 @@ function regnUtFizzBuzz(evt) {
 document.querySelector('#fizzbuzz button')
     .addEventListener('click', e => regnUtFizzBuzz(e));
 
+function regnUtFibonacci(evt) {
+    evt.preventDefault();
+
+    const input = document.querySelector('#fibonacci input');
+    const output = document.querySelector('#fibonacci .resultat');
+
+    const tall = parseInt(input.value);
+
+    output.textContent = fibonacci(tall);
+}
+
+document.querySelector('#fibonacci button')
+    .addEventListener('click', e => regnUtFibonacci(e));
+
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('#fakultet form');
     const resultSpan = document.querySelector('.resultat');
@@ -51,7 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const factorialResult = factorial(number);
         const fizzbuzzResult = fizzbuzz(number);
+        const fibonacciResult = fibonacci(number);
 
-        resultSpan.textContent = `Fakultet: ${factorialResult}, FizzBuzz: ${fizzbuzzResult}`;
+        resultSpan.textContent = `Fakultet: ${factorialResult}, FizzBuzz: ${fizzbuzzResult}, Fibonacci: ${fibonacciResult}`;
     });
 });
